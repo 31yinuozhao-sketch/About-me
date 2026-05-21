@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mora's World</title>
+    <style>
+        /* --- Color Palette & Reset --- */
+        :root {
+            --bamboo-green: #40826D;
+            --light-green: #8FBC8F;
+            --ocean-blue: #4682B4;
+            --dark-blue: #1D3557;
+            --light-bg: #F4F9F4;
+            --white: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-bg);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* --- Header Section --- */
+        header {
+            background: linear-gradient(135deg, var(--bamboo-green), var(--ocean-blue));
+            color: var(--white);
+            padding: 40px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--dark-blue);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+        }
+
+        /* --- Layout Container --- */
+        .container {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+
+        /* --- Card Styles --- */
+        .card {
+            background-color: var(--white);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+            border-left: 6px solid var(--bamboo-green);
+        }
+
+        .card-blue {
+            border-left-color: var(--ocean-blue);
+        }
+
+        h2 {
+            color: var(--dark-blue);
+            margin-bottom: 15px;
+            font-size: 1.6rem;
+        }
+
+        /* --- Game Functionality --- */
+        .game-box {
+            text-align: center;
+            padding: 20px;
+            background-color: #EBF5FB;
+            border-radius: 8px;
+            border: 2px dashed var(--ocean-blue);
+        }
+
+        .game-btn {
+            background-color: var(--ocean-blue);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 15px;
+            transition: transform 0.1s, background-color 0.2s;
+        }
+
+        .game-btn:hover {
+            background-color: var(--dark-blue);
+        }
+
+        .game-btn:active {
+            transform: scale(0.95);
+        }
+
+        #score {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--ocean-blue);
+        }
+
+        /* --- Notes Functionality --- */
+        .note-area {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            border: 2px solid var(--light-green);
+            border-radius: 8px;
+            resize: none;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+
+        .note-btn {
+            background-color: var(--bamboo-green);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .note-btn:hover {
+            background-color: #2E5C4E;
+        }
+
+        .notes-list {
+            margin-top: 15px;
+            list-style-type: none;
+        }
+
+        .
