@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mora's STEM Project Website</title>
+    <title>Ben's STEM Project Website</title>
     <style>
-        /* --- GREEN & BLUE MINIMALIST THEME (CSS) --- */
+        /* --- ARSENAL MINIMALIST THEME (CSS) --- */
         :root {
-            --primary-blue: #1e88e5;
-            --accent-green: #2e7d32;
-            --dark-navy: #0d47a1;
-            --light-bg: #f4f9f4;
+            --arsenal-red: #DB0007;
+            --arsenal-gold: #9C824A;
+            --arsenal-dark: #063672;
+            --light-bg: #faffff;
             --text-color: #333;
         }
 
@@ -30,7 +30,7 @@
 
         /* 4. NAVIGATION BAR */
         nav {
-            background-color: var(--dark-navy);
+            background-color: var(--arsenal-dark);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -48,12 +48,12 @@
         }
 
         nav a:hover {
-            color: #a5d6a7;
+            color: var(--arsenal-gold);
         }
 
         /* 5. HEADER */
         header {
-            background: linear-gradient(135deg, var(--primary-blue) 60%, var(--accent-green));
+            background: linear-gradient(135deg, var(--arsenal-red) 70%, var(--arsenal-gold));
             color: white;
             text-align: center;
             padding: 60px 20px;
@@ -82,17 +82,17 @@
             padding: 25px;
             margin-bottom: 30px;
             border-radius: 8px;
-            border-left: 5px solid var(--accent-green);
+            border-left: 5px solid var(--arsenal-red);
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
 
         h2 {
-            color: var(--dark-navy);
+            color: var(--arsenal-dark);
             margin-bottom: 15px;
         }
 
         .champions-badge {
-            background-color: var(--accent-green);
+            background-color: var(--arsenal-gold);
             color: white;
             display: inline-block;
             padding: 5px 10px;
@@ -125,10 +125,10 @@
             padding: 20px;
         }
 
-        /* Custom slide colors */
-        .slide1 { background-color: var(--primary-blue); }
-        .slide2 { background-color: var(--accent-green); }
-        .slide3 { background-color: var(--dark-navy); }
+        /* Custom slide colors for placeholder look */
+        .slide1 { background-color: #e53935; }
+        .slide2 { background-color: #1e88e5; }
+        .slide3 { background-color: #43a047; }
 
         .slider-btn {
             position: absolute;
@@ -150,16 +150,196 @@
             text-align: center;
             padding: 20px;
             background: #f9f9f9;
-            border: 2px dashed var(--primary-blue);
+            border: 2px dashed var(--arsenal-gold);
             border-radius: 6px;
         }
 
         .game-btn {
-            background-color: var(--accent-green);
+            background-color: var(--arsenal-red);
             color: white;
             border: none;
             padding: 12px 24px;
             font-size: 1rem;
             border-radius: 4px;
             cursor: pointer;
-            margin-top: 10px
+            margin-top: 10px;
+        }
+
+        .game-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* 2. CHAT / NOTE FUNCTIONALITY */
+        .chat-box {
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            overflow: hidden;
+        }
+
+        .chat-messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            background: #fafafa;
+            font-size: 0.95rem;
+        }
+
+        .chat-input-area {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        .chat-input-area input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            outline: none;
+        }
+
+        .chat-input-area button {
+            background: var(--arsenal-dark);
+            color: white;
+            border: none;
+            padding: 0 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#arsenal">Arsenal News</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#game">Game</a>
+        <a href="#notes">Chat/Notes</a>
+    </nav>
+
+    <header>
+        <h1>Welcome to Ben's Website!</h1>
+        <p>Grade 7 Student | AI Web Developer | STEM Project</p>
+    </header>
+
+    <div class="container">
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi, I am <strong>Ben</strong>! I am currently a student in <strong>Grade 7</strong>. This website is part of my school <strong>STEM Project</strong>, where I am exploring how to learn and build functional web applications using artificial intelligence tools.</p>
+            
+            <br>
+            <h3>My Accomplishments</h3>
+            <p>Successfully learning to prompt and utilize AI models to design, write, and troubleshoot real code for this website!</p>
+            
+            <br>
+            <h3>Hobbies & Interests</h3>
+            <p>I enjoy coding, tech experiments, playing video games, and keeping up with sports analytics.</p>
+            
+            <br>
+            <h3>My Favorite Things</h3>
+            <p>My top favorite thing right now is football, tech gadgets, and spending time coding new features into my projects.</p>
+            
+            <br>
+            <h3>My Family</h3>
+            <p>I am lucky to have a super supportive family who always encourages me with my school STEM challenges and cheers along with me during weekend matchdays.</p>
+        </section>
+
+        <section id="arsenal">
+            <h2>Gunners Corner 🔴 ⚪</h2>
+            <p><strong>Huge Update:</strong> Arsenal won today and are officially crowned the <strong>Champions!</strong> COYG!</p>
+            <div class="champions-badge">🏆 Arsenal: Today's Champions</div>
+        </section>
+
+        <section id="gallery">
+            <h2>My Gallery Menu</h2>
+            <p>Click through to see different categories:</p>
+            <div class="slider-container">
+                <div class="slide slide1" style="display: flex;">⚽ Arsenal Victory Dynamic Slide</div>
+                <div class="slide slide2">💻 Grade 7 STEM Project Space</div>
+                <div class="slide slide3">🎮 Gaming & Hobbies Hub</div>
+                
+                <button class="slider-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                <button class="slider-btn next" onclick="moveSlide(1)">&#10095;</button>
+            </div>
+        </section>
+
+        <section id="game">
+            <h2>Mini-Game: Football Clicker</h2>
+            <div class="game-box">
+                <p>Help Arsenal score goals! Click the button as fast as you can.</p>
+                <h3 style="margin: 10px 0;">Goals Scored: <span id="score">0</span> ⚽</h3>
+                <button class="game-btn" onclick="scoreGoal()">Score a Goal!</button>
+            </div>
+        </section>
+
+        <section id="notes">
+            <h2>Live Chat / Notes Log</h2>
+            <p>Leave a note about the website or talk about the Arsenal match below:</p>
+            <br>
+            <div class="chat-box">
+                <div class="chat-messages" id="chatMessages">
+                    <div><em>[System]: Welcome to Ben's guestbook. Say something nice!</em></div>
+                </div>
+                <div class="chat-input-area">
+                    <input type="text" id="chatInput" placeholder="Type a note here..." onkeypress="handleKeyPress(event)">
+                    <button onclick="addNote()">Send</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script>
+        // --- 3. GALLERY SLIDER LOGIC ---
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+
+        function showSlide(index) {
+            if (index >= slides.length) currentSlide = 0;
+            if (index < 0) currentSlide = slides.length - 1;
+            
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = 'none';
+            }
+            slides[currentSlide].style.display = 'flex';
+        }
+
+        function moveSlide(step) {
+            currentSlide += step;
+            showSlide(currentSlide);
+        }
+
+        // --- 1. GAME LOGIC ---
+        let goalCount = 0;
+        function scoreGoal() {
+            goalCount++;
+            document.getElementById('score').innerText = goalCount;
+        }
+
+        // --- 2. CHAT / NOTE LOGIC ---
+        function addNote() {
+            const inputField = document.getElementById('chatInput');
+            const messageText = inputField.value.trim();
+            
+            if (messageText !== "") {
+                const messageContainer = document.getElementById('chatMessages');
+                const newNote = document.createElement('div');
+                newNote.style.margin = "5px 0";
+                newNote.innerHTML = `<strong>Ben (Visitor):</strong> ${messageText}`;
+                
+                messageContainer.appendChild(newNote);
+                inputField.value = ""; // Clear input box
+                messageContainer.scrollTop = messageContainer.scrollHeight; // Scroll to bottom
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                addNote();
+            }
+        }
+    </script>
+</body>
+</html>
